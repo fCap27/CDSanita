@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ClinicaDemo API",
+    "version": "1.0.0",
+    "description": "API per gestione pazienti e appuntamenti"
+  },
+  "paths": {
+    "/api/patients": {
+      "get": {
+        "summary": "Lista pazienti"
+      },
+      "post": {
+        "summary": "Crea paziente"
+      }
+    },
+    "/api/patients/{id}": {
+      "get": {
+        "summary": "Ottieni paziente"
+      },
+      "put": {
+        "summary": "Aggiorna paziente"
+      },
+      "delete": {
+        "summary": "Elimina paziente"
+      }
+    },
+    "/api/appointments": {
+      "get": {
+        "summary": "Lista appuntamenti"
+      },
+      "post": {
+        "summary": "Crea appuntamento"
+      }
+    },
+    "/api/appointments/{id}": {
+      "get": {
+        "summary": "Ottieni appuntamento"
+      },
+      "put": {
+        "summary": "Aggiorna appuntamento"
+      },
+      "delete": {
+        "summary": "Elimina appuntamento"
+      }
+    }
+  }
+}

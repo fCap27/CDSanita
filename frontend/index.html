@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ClinicaDemo - Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>ClinicaDemo</h1></header>
+  <main>
+    <section id="patients">
+      <h2>Patienti</h2>
+      <form id="patient-form">
+        <input id="p-name" placeholder="Nome" required />
+        <input id="p-age" type="number" placeholder="Età" required />
+        <button type="submit">Aggiungi Paziente</button>
+      </form>
+      <ul id="patient-list"></ul>
+    </section>
+
+    <section id="appointments">
+      <h2>Appuntamenti</h2>
+      <form id="appt-form">
+        <input id="a-patient-id" placeholder="Patient ID" required />
+        <input id="a-date" type="datetime-local" required />
+        <input id="a-reason" placeholder="Motivo" />
+        <button type="submit">Aggiungi Appuntamento</button>
+      </form>
+      <ul id="appt-list"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

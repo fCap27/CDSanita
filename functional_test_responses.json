@@ -1,0 +1,54 @@
+{
+  "create_patient": {
+    "status": 201,
+    "json": {
+      "id": 1,
+      "name": "Mario Rossi",
+      "age": 45
+    }
+  },
+  "list_patients": {
+    "status": 200,
+    "json": [
+      {
+        "id": 1,
+        "name": "Mario Rossi",
+        "age": 45
+      }
+    ]
+  },
+  "create_appointment": {
+    "status": 201,
+    "json": {
+      "id": 1,
+      "patient_id": 1,
+      "date": "2025-12-10T09:30:00",
+      "reason": "Visita di controllo"
+    }
+  },
+  "list_appointments": {
+    "status": 200,
+    "json": [
+      {
+        "id": 1,
+        "patient_id": 1,
+        "date": "2025-12-10T09:30:00",
+        "reason": "Visita di controllo"
+      }
+    ]
+  },
+  "update_patient": {
+    "status": 200,
+    "json": {
+      "id": 1,
+      "name": "Mario Rossi",
+      "age": 46
+    }
+  },
+  "delete_appointment": {
+    "status": 200,
+    "json": {
+      "result": "deleted"
+    }
+  }
+}
